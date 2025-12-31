@@ -10,3 +10,7 @@
 
 # Ignorer les fichiers phtos courants
 *.jpg
+
+
+# Ignorer les fichiers features.h5
+*.h5
