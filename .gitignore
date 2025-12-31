@@ -1,6 +1,9 @@
 # Ignorer le dossier videos à la racine
 /videos/
 
+# Ignorer le dossier archives à la racine
+/archives/
+
 # Ignorer les fichiers vidéo courants
 *.mp4
 *.mkv
@@ -8,7 +11,7 @@
 *.mov
 *.webm
 
-# Ignorer les fichiers phtos courants
+# Ignorer les fichiers photos courants
 *.jpg
 
 
