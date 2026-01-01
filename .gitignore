@@ -4,6 +4,9 @@
 # Ignorer le dossier archives à la racine
 /archives/
 
+# Ignorer le dossier __pycache__ à la racine
+/__pycache__/
+
 # Ignorer les fichiers vidéo courants
 *.mp4
 *.mkv
