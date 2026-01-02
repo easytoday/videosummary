@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Configuration
-DATASET="dataset_cpu/alt_dataset_kts.h5"
-SPLITS="datasets/alt_splits_kts.json"
-BASE_LOG_DIR="log/alt_run_kts_cv" # cross validation
+DATASET="dataset_original/eccv16_dataset_tvsum_google_pool5.h5"
+SPLITS="dataset_original/tvsum_splits.json"
+BASE_LOG_DIR="log/eccv16_dataset_tvsum_google_pool5_cv" # cross validation
 
 echo "Démarrage de la Cross-Validation sur 5 splits..."
 
