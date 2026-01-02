@@ -1,6 +1,9 @@
 # Ignorer le dossier videos à la racine
 /videos/
 
+# Ignorer le dossier dataset_cpu à la racine
+/dataset_cpu/
+
 # Ignorer le dossier archives à la racine
 /archives/
 
