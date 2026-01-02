@@ -4,6 +4,9 @@
 # Ignorer le dossier dataset_cpu à la racine
 /dataset_cpu/
 
+# Ignorer le dossier dataset_original à la racine
+/dataset_original/
+
 # Ignorer le dossier archives à la racine
 /archives/
 
