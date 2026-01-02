@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-DATASET="data/alt_dataset_kts.h5"
+DATASET="dataset_cpu/alt_dataset_kts.h5"
 SPLITS="datasets/alt_splits_kts.json"
 BASE_LOG_DIR="log/alt_run_kts_cv" # CV pour Cross-Validation
 
