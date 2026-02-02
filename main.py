@@ -197,7 +197,7 @@ def evaluate(model, dataset, test_keys, use_gpu):
             if args.save_results:
                 h5_res.create_dataset(key + '/score', data=probs)
                 h5_res.create_dataset(key + '/machine_summary', data=machine_summary)
-                h5_res.create_dataset(key + '/gtscore', data=dataset[key]['gtscore'][...])
+                #h5_res.create_dataset(key + '/gtscore', data=dataset[key]['gtscore'][...])
                 h5_res.create_dataset(key + '/fm', data=fm)
 
     if args.verbose:

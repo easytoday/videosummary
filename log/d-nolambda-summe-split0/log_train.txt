@@ -1,0 +1,81 @@
+==========
+Args:Namespace(dataset='dataset_original/eccv16_dataset_summe_google_pool5.h5', split='dataset_original/summe_splits.json', split_id=0, metric='summe', input_dim=1024, hidden_dim=256, num_layers=1, rnn_cell='lstm', lr=1e-05, weight_decay=1e-05, max_epoch=60, stepsize=30, gamma=0.1, num_episode=5, beta=0.01, seed=1, gpu='0', use_cpu=True, evaluate=False, save_dir='log/d-nolambda-summe-split0', resume='', verbose=True, save_results=False)
+==========
+Currently using CPU
+Initialize dataset dataset_original/eccv16_dataset_summe_google_pool5.h5
+# total videos 25. # train videos 20. # test videos 5
+Initialize model
+Model size: 2.62605M
+==> Start training
+epoch 1/60	 reward 0.3895357193052769	
+epoch 2/60	 reward 0.3886486648023128	
+epoch 3/60	 reward 0.3886299428343773	
+epoch 4/60	 reward 0.3904273863136768	
+epoch 5/60	 reward 0.3891546083986759	
+epoch 6/60	 reward 0.38929923489689827	
+epoch 7/60	 reward 0.3879900227487087	
+epoch 8/60	 reward 0.3909740188717842	
+epoch 9/60	 reward 0.3898312009871006	
+epoch 10/60	 reward 0.3897707918286324	
+epoch 11/60	 reward 0.3882400162518025	
+epoch 12/60	 reward 0.3887148076295852	
+epoch 13/60	 reward 0.3898368433117866	
+epoch 14/60	 reward 0.389435204565525	
+epoch 15/60	 reward 0.38944704726338386	
+epoch 16/60	 reward 0.3888027590513229	
+epoch 17/60	 reward 0.38899771600961686	
+epoch 18/60	 reward 0.3875678624212742	
+epoch 19/60	 reward 0.39043736398220064	
+epoch 20/60	 reward 0.38965378567576414	
+epoch 21/60	 reward 0.3883259266614914	
+epoch 22/60	 reward 0.39146008834242824	
+epoch 23/60	 reward 0.38917147547006603	
+epoch 24/60	 reward 0.3880039355158806	
+epoch 25/60	 reward 0.38934274554252635	
+epoch 26/60	 reward 0.39037053570151325	
+epoch 27/60	 reward 0.3892731620371342	
+epoch 28/60	 reward 0.39184513941407206	
+epoch 29/60	 reward 0.39059948489069934	
+epoch 30/60	 reward 0.38803243219852446	
+epoch 31/60	 reward 0.3897387334704399	
+epoch 32/60	 reward 0.39066495165228843	
+epoch 33/60	 reward 0.39038185238838197	
+epoch 34/60	 reward 0.38939281433820727	
+epoch 35/60	 reward 0.3922522880136966	
+epoch 36/60	 reward 0.3897072894871235	
+epoch 37/60	 reward 0.3898224529623985	
+epoch 38/60	 reward 0.389624969214201	
+epoch 39/60	 reward 0.38965697437524793	
+epoch 40/60	 reward 0.3905515718460083	
+epoch 41/60	 reward 0.3888668823242188	
+epoch 42/60	 reward 0.3883809439837933	
+epoch 43/60	 reward 0.3897115962207317	
+epoch 44/60	 reward 0.3899517779052257	
+epoch 45/60	 reward 0.3895310348272324	
+epoch 46/60	 reward 0.3896438573300839	
+epoch 47/60	 reward 0.3887951688468457	
+epoch 48/60	 reward 0.3897037856280804	
+epoch 49/60	 reward 0.38807319357991216	
+epoch 50/60	 reward 0.3898609945178032	
+epoch 51/60	 reward 0.3899146170914173	
+epoch 52/60	 reward 0.3900447089970111	
+epoch 53/60	 reward 0.38679138779640204	
+epoch 54/60	 reward 0.3888329604268074	
+epoch 55/60	 reward 0.38981415808200837	
+epoch 56/60	 reward 0.3885472020506858	
+epoch 57/60	 reward 0.3901931296288967	
+epoch 58/60	 reward 0.39002452179789543	
+epoch 59/60	 reward 0.3892583933472634	
+epoch 60/60	 reward 0.3896181131899357	
+==> Test
+---  --------  -------
+No.  Video     F-score
+1    video_12  0.0%
+2    video_22  35.2%
+3    video_25  55.3%
+4    video_7   29.8%
+5    video_8   49.4%
+---  --------  -------
+Average F-score 33.9%
+Finished. Total elapsed time (h:m:s): 0:02:23
+Model saved to log/d-nolambda-summe-split0/model_epoch60.pth.tar

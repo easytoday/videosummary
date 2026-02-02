@@ -1,0 +1,86 @@
+==========
+Args:Namespace(dataset='dataset_original/eccv16_dataset_tvsum_google_pool5.h5', split='dataset_original/tvsum_splits.json', split_id=4, metric='tvsum', input_dim=1024, hidden_dim=256, num_layers=1, rnn_cell='lstm', lr=1e-05, weight_decay=1e-05, max_epoch=60, stepsize=30, gamma=0.1, num_episode=5, beta=0.01, seed=1, gpu='0', use_cpu=True, evaluate=False, save_dir='log/DR-DSN-tvsum-split4', resume='', verbose=True, save_results=False)
+==========
+Currently using CPU
+Initialize dataset dataset_original/eccv16_dataset_tvsum_google_pool5.h5
+# total videos 50. # train videos 40. # test videos 10
+Initialize model
+Model size: 2.62605M
+==> Start training
+epoch 1/60	 reward 0.9147613984346389	
+epoch 2/60	 reward 0.9137485259771347	
+epoch 3/60	 reward 0.9146590757369996	
+epoch 4/60	 reward 0.9152050551772117	
+epoch 5/60	 reward 0.914873538315296	
+epoch 6/60	 reward 0.9147024112939836	
+epoch 7/60	 reward 0.9143937495350837	
+epoch 8/60	 reward 0.9141631889343262	
+epoch 9/60	 reward 0.9137672743201255	
+epoch 10/60	 reward 0.9146947064995766	
+epoch 11/60	 reward 0.9143081137537955	
+epoch 12/60	 reward 0.914082346558571	
+epoch 13/60	 reward 0.914041497707367	
+epoch 14/60	 reward 0.9147303599119188	
+epoch 15/60	 reward 0.9147681936621668	
+epoch 16/60	 reward 0.9139188235998154	
+epoch 17/60	 reward 0.91408620595932	
+epoch 18/60	 reward 0.914821901321411	
+epoch 19/60	 reward 0.9136564001441002	
+epoch 20/60	 reward 0.9149515220522881	
+epoch 21/60	 reward 0.914049381017685	
+epoch 22/60	 reward 0.9146311849355697	
+epoch 23/60	 reward 0.9140206956863404	
+epoch 24/60	 reward 0.9139978370070457	
+epoch 25/60	 reward 0.9142226669192315	
+epoch 26/60	 reward 0.9143679377436638	
+epoch 27/60	 reward 0.9143300259113312	
+epoch 28/60	 reward 0.9150686872005462	
+epoch 29/60	 reward 0.9150502771139145	
+epoch 30/60	 reward 0.9145816111564636	
+epoch 31/60	 reward 0.9148523169755937	
+epoch 32/60	 reward 0.9150666898488998	
+epoch 33/60	 reward 0.9150586539506911	
+epoch 34/60	 reward 0.9147461074590684	
+epoch 35/60	 reward 0.9148508903384208	
+epoch 36/60	 reward 0.9142255488038064	
+epoch 37/60	 reward 0.9146629330515861	
+epoch 38/60	 reward 0.9153110179305077	
+epoch 39/60	 reward 0.9159349995851518	
+epoch 40/60	 reward 0.915328857600689	
+epoch 41/60	 reward 0.9154891830682755	
+epoch 42/60	 reward 0.9160336780548096	
+epoch 43/60	 reward 0.9163164472579958	
+epoch 44/60	 reward 0.915536969602108	
+epoch 45/60	 reward 0.9153888249397278	
+epoch 46/60	 reward 0.9156105351448058	
+epoch 47/60	 reward 0.9162565112113953	
+epoch 48/60	 reward 0.9165037924051285	
+epoch 49/60	 reward 0.9160588347911837	
+epoch 50/60	 reward 0.9155983486771584	
+epoch 51/60	 reward 0.9157984042167664	
+epoch 52/60	 reward 0.9156619507074357	
+epoch 53/60	 reward 0.9164134404063227	
+epoch 54/60	 reward 0.9162680459022521	
+epoch 55/60	 reward 0.9166621857881546	
+epoch 56/60	 reward 0.9162207618355751	
+epoch 57/60	 reward 0.9162127289175988	
+epoch 58/60	 reward 0.9161840385198594	
+epoch 59/60	 reward 0.9165702137351037	
+epoch 60/60	 reward 0.9168042504787444	
+==> Test
+---  --------  -------
+No.  Video     F-score
+1    video_14  41.0%
+2    video_20  61.4%
+3    video_23  43.7%
+4    video_27  40.7%
+5    video_31  66.9%
+6    video_33  57.4%
+7    video_37  40.2%
+8    video_38  48.9%
+9    video_45  72.7%
+10   video_8   49.7%
+---  --------  -------
+Average F-score 52.3%
+Finished. Total elapsed time (h:m:s): 0:06:04
+Model saved to log/DR-DSN-tvsum-split4/model_epoch60.pth.tar

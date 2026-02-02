@@ -7,11 +7,21 @@
 # Ignorer le dossier dataset_original à la racine
 /dataset_original/
 
+# Ignorer les dossiers volumineux
+/mesoutils/
+/images/
+
 # Ignorer le dossier archives à la racine
 /archives/
 
 # Ignorer le dossier __pycache__ à la racine
 /__pycache__/
+
+# Ignorer les dossiers de test d'évaluation
+eval_results 
+
+# Ignorer les fichiers de notes
+notes.txt
 
 # Ignorer les fichiers vidéo courants
 *.mp4

@@ -1,0 +1,5 @@
+==========
+Args:Namespace(dataset='dataset_cpu/filtered_dataset_dhash.h5.h5', split='datasets/alt_splits_dhash_filtered.json', split_id=1, metric='tvsum', input_dim=1024, hidden_dim=256, num_layers=1, rnn_cell='lstm', lr=1e-05, weight_decay=1e-05, max_epoch=60, stepsize=30, gamma=0.1, num_episode=5, beta=0.01, seed=1, gpu='0', use_cpu=True, evaluate=False, save_dir='log/-filtered_dataset_dhash.h5-split1', resume='', verbose=True, save_results=False)
+==========
+Currently using CPU
+Initialize dataset dataset_cpu/filtered_dataset_dhash.h5.h5
