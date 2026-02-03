@@ -24,7 +24,7 @@ eval_results
 notes.txt
 
 # Ignorer les fichiers vidéo courants
-*.mp4
+#*.mp4
 *.mkv
 *.avi
 *.mov
