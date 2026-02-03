@@ -12,28 +12,41 @@ conda env create --name envname --file=requirements.yml
 
 
 ### 4. Make splits
-```bash
+```python
 python create_split.py -d datasets/eccv16_dataset_summe_google_pool5.h5 --save-dir datasets --save-name summe_splits  --num-splits 5
 ```
 As a result, the dataset is randomly split for 5 times, which are saved as json file.
+Adapt and apply the same command to the alternative dataset.
 
 Train and test codes are written in `main.py`. To see the detailed arguments, please do `python main.py -h`.
 
 ## How to train
-```bash
+```python
 python main.py -d datasets/eccv16_dataset_summe_google_pool5.h5 -s datasets/summe_splits.json -m summe --gpu 0 --save-dir log/summe-split0 --split-id 0 --verbose
 ```
 
 ## How to test
-```bash
+```python
 python main.py -d datasets/eccv16_dataset_summe_google_pool5.h5 -s datasets/summe_splits.json -m summe --gpu 0 --save-dir log/summe-split0 --split-id 0 --evaluate --resume path_to_your_model.pth.tar --verbose --save-results
 ```
 
 If argument `--save-results` is enabled, output results will be saved to `results.h5` under the same folder specified by `--save-dir`. To visualize the score-vs-gtscore, simple do
-```bash
+```python
 python visualize_results.py -p path_to/result.h5
 ```
 
+## Build summary
+### 1. identify the video to summarize
+Read the result.h5 file:
+```bash
+h5ls -r path_to/result.h5
+```
+Note the index of chosen video (i=0,...)
+### 2. produce the summary
+```python
+python  direct_summary2video.py -p path_to/result.h5 -v path_to/real_video.mp4 -i index_of_the_chosen_video
+```
+The video summary is produced inside the summaries folder
 
 ## Citation
 ```
