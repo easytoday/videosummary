@@ -35,7 +35,7 @@ If argument `--save-results` is enabled, output results will be saved to `result
 python visualize_results.py -p path_to/result.h5
 ```
 
-## Build summary
+## How to build a summary
 ### 1. identify the video to summarize
 Read the result.h5 file:
 ```bash
